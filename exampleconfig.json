@@ -1,0 +1,22 @@
+{
+    "sites": 
+    [
+        "http://www.redspark.nu/en/feed/",
+        "https://ndfp.org/feed/"
+    ],
+    "subreddits": 
+    [
+        "jwnskanzkwktest"
+    ],
+    "redditapi": 
+    {
+        "client_id": "xxxxxxxxxxxx",
+        "client_secret": "xxxxxxxxxxxxxxxxxxxxxxx",
+        "username": "xxxxxxxxxx",
+        "password": "xxxxxxxxxxxxxxxx",
+        "user_agent": "xxxxxxxxxxxxx",
+        "flair": 1,
+        "approve": 1
+    },
+    "waitafter": 60
+}
