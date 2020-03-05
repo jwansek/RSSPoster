@@ -1,4 +1,4 @@
-#A simple script for automatically posting links from RSS feeds to reddit (and twitter later)
+# A simple script for automatically posting links from RSS feeds to reddit (and twitter later)
 
 Useage:
 
@@ -14,4 +14,4 @@ Use your favourite text editor like vim or nano to change the settings as you re
 
 TODO:
 
-- [] Add twitter posting
+- [ ] Add twitter posting
