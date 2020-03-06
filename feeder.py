@@ -61,4 +61,4 @@ if __name__ == "__main__":
         for site_name, title, link in check_sites():
             post_to_reddit(site_name, title, link)
         print()
-        time.sleep(CONFIG["waitafter"])
+        time.sleep(CONFIG["waitafter"] * 60)
