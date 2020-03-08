@@ -37,9 +37,14 @@ def check_sites():
     out = []
     for site in CONFIG["sites"]:
         d = feedparser.parse(site)
-        if not link_posted(d.entries[0].link):
-            out.append([d["feed"]["title"], d.entries[0].title, d.entries[0].link])
-            blacklist(d.entries[0].link)
+        for entry in d.entries:
+            if link_posted(entry.link):
+                break
+            else:
+                print(entry.link)
+                # out.append([d["feed"]["title"], entry.title, entry.link])
+                # blacklist(entry.link)
+
     return out
 
 def post_to_reddit(site_name, title, link):

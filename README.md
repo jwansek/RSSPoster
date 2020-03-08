@@ -10,6 +10,10 @@ Use your favourite text editor like vim or nano to change the settings as you re
 
 `sudo pip3 install -r requirements.txt`
 
+Run this if you need to ignore posts you've already submitted:
+
+`python3 blacklist_posts.py`
+
 `python3 feeder.py`
 
 TODO:
