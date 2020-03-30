@@ -13,13 +13,7 @@ CONFIG_FILE = "config.json"
 with open(CONFIG_FILE, "r") as f:
     CONFIG = json.load(f)
 
-REDDIT = praw.Reddit(
-    client_id = CONFIG["redditapi"]["client_id"],
-    client_secret = CONFIG["redditapi"]["client_secret"],
-    username = CONFIG["redditapi"]["username"],
-    password = CONFIG["redditapi"]["password"],
-    user_agent = CONFIG["redditapi"]["user_agent"],
-)
+REDDIT = praw.Reddit(**CONFIG["redditapi"])
 
 def blacklist(link):
     with open(BLACKLIST_FILE, "a") as f:
