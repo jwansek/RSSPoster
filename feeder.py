@@ -1,3 +1,4 @@
+from textblob import TextBlob
 import feedparser
 import datetime
 import json
@@ -41,8 +42,9 @@ def check_sites():
             if link_posted(entry.link):
                 break
             else:
-                out.append([d["feed"]["title"], entry.title, entry.link])
-                blacklist(entry.link)
+                if TextBlob(entry.title).detect_language() in CONFIG["language_whitelist"]:
+                    out.append([d["feed"]["title"], entry.title, entry.link])
+                    blacklist(entry.link)
 
     return out
 
