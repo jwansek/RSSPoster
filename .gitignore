@@ -1,5 +1,6 @@
 config.json
 blacklist.csv
+rssposter.log
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
