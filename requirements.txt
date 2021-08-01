@@ -1,3 +1,4 @@
-feedparser==5.2.1
-praw>=7.1.0
-textblob==0.15.3
+feedparser
+pymysql
+praw
+langdetect

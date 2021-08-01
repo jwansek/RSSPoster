@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+    cron:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        image: jwansek/rssposter
+        network_mode: host
+        volumes:
+          - ./rssposter.log:/app/rssposter.log
+          - ./poster.conf:/app/poster.conf

@@ -1,0 +1,1 @@
+@hourly python3 /app/rssposter.py /app/

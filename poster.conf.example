@@ -1,0 +1,27 @@
+[sites]
+sites = 
+    http://www.redspark.nu/en/feed/
+    https://ndfp.org/feed/
+    https://incendiarynews.com/feed/
+languages =
+    en
+
+[reddit]
+subreddits = 
+    chairmanmao
+
+[redditapi]
+client_id = *************
+client_secret = **********************
+username = *************
+password = ************************
+user_agent = *****************
+
+[logging]
+logfile = rssposter.log
+
+[mysql]
+host = 192.168.1.92
+user = root
+passwd = ************
+db = RSSPoster
