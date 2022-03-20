@@ -78,5 +78,5 @@ def post_to_reddit(site_name, title, link):
         submission.mod.approve()
         logging.info("Successfully posted %s article to https://redd.it/%s" % (site_name, submission.id))             
 
-with Database() as db:
+if __name__ == "__main__:":
     search_sites()
